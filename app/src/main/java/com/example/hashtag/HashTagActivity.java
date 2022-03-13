@@ -23,7 +23,7 @@ public class HashTagActivity extends AppCompatActivity {
             Uri uri = intent.getData();
             Log.d("태그테스트", "uri : " + uri);
             String srt = uri.toString();
-            String tag = srt.substring(srt.indexOf("#")+1,srt.length());
+            String tag = srt.substring(srt.indexOf("#")+1);
             Log.d("태그테스트", "tag : " + tag);
 
             String temp_post_id = uri.getQueryParameter("hashtag");
